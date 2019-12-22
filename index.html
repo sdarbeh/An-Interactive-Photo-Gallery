@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Photo Lightbox</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="js/Lightbox/css/lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4ab324f3d2.js" crossorigin="anonymous"></script>
+</head>
+<div id="wrapper">
+    <header>
+        <div class="logo">
+            <h1>Photo Lightbox</h1>
+        </div>
+        <div class="search-box">
+            <label for="search"></label>
+            <input type="text" id="search" class="search-txt" onkeyup="imageFilter()" placeholder="Type to search">
+            <a class="search-btn" href="#"><i class="fas fa-search"></i></a>
+        </div>
+    </header>
+    <div class="container">
+        <main>
+            <ul class="photos">
+                <li><a href="photos/01.jpg" data-lightbox="gallery" data-title="I love hay bales. Took this snap on a drive through the countryside past some straw fields."><img src="photos/thumbnails/01.jpg"  alt="Hay Bales"></a></li>
+                <li><a href="photos/02.jpg" data-lightbox="gallery" data-title="The lake was so calm today. We had a great view of the snow on the mountains from here."><img src="photos/thumbnails/02.jpg" alt="Lake"></a></li>
+                <li><a href="photos/03.jpg" data-lightbox="gallery" data-title="I hiked to the top of the mountain and got this picture of the canyon and trees below."><img src="photos/thumbnails/03.jpg" alt="Canyon"></a></li>
+                <li><a href="photos/04.jpg" data-lightbox="gallery" data-title="It was amazing to see an iceberg up close, it was so cold but didn’t snow today."><img src="photos/thumbnails/04.jpg" alt="Iceberg"></a></li>
+                <li><a href="photos/05.jpg" data-lightbox="gallery" data-title="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons."><img src="photos/thumbnails/05.jpg" alt="Desert"></a></li>
+                <li><a href="photos/06.jpg" data-lightbox="gallery" data-title="Fall is coming, I love when the leaves on the trees start to change color."><img src="photos/thumbnails/06.jpg" alt="Fall"></a></li>
+                <li><a href="photos/07.jpg" data-lightbox="gallery" data-title="I drove past this plantation yesterday, everything is so green!"><img src="photos/thumbnails/07.jpg" alt="Plantation"></a></li>
+                <li><a href="photos/08.jpg" data-lightbox="gallery" data-title="My summer vacation to the Oregon Coast. I love the sandy dunes!"><img src="photos/thumbnails/08.jpg" alt="Dunes"></a></li>
+                <li><a href="photos/09.jpg" data-lightbox="gallery" data-title="We enjoyed a quiet stroll down this countryside lane."><img src="photos/thumbnails/09.jpg" alt="Countryside Lane"></a></li>
+                <li><a href="photos/10.jpg" data-lightbox="gallery" data-title="Sunset at the coast! The sky turned a lovely shade of orange."><img src="photos/thumbnails/10.jpg"  alt="Sunset"></a></li>
+                <li><a href="photos/11.jpg" data-lightbox="gallery" data-title="I did a tour of a cave today and the view of the landscape below was breathtaking."><img src="photos/thumbnails/11.jpg" alt="Cave"></a></li>
+                <li><a href="photos/12.jpg" data-lightbox="gallery" data-title="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in."><img src="photos/thumbnails/12.jpg" alt="Bluebells"></a></li>
+            </ul>
+        </main>
+    </div>
+</div>
+    <footer>
+        <div class="fadeOpacity">
+            <div class="container">
+                <p>Created using</p>
+                <div class="footericons">
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-js"></i>
+                </div>
+                <div class="webauthor"><a href="https://github.com/sdarbeh" target="_blank">Sam Darbeh</a></div>
+            </div>
+        </div>
+    </footer>
+<script src="js/mainjs.js"></script>
+    <script src="js/Lightbox/js/lightbox-plus-jquery.min.js"></script>
+    <script>
+        lightbox.option({
+            "disableScrolling" : true,
+            "maxWidth" : 900,
+            "positionFromTop" : 175,
+            "showImageNumberLabel" : false
+        });
+    </script>
+</html>
