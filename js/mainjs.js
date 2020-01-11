@@ -1,7 +1,6 @@
 // Search box
 const input = document.getElementById("search");
 
-
 function imageFilter() {
     let text = input.value.toLowerCase();
     const img = document.querySelectorAll("li a");
