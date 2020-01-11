@@ -125,13 +125,18 @@ footer p {
 .fa-js {
     color: #F0DB4F;
 }
+br {
+    display: none;
+}
 footer a {
     color: #D8D9D7;
     text-decoration: none;
 }
 footer .webauthor {
-    font-size: .7rem;
     margin: 10px 0 0 0 ;
+}
+.fa-github {
+    font-size: 1.7rem;
 }
 /*============================
          footer - end
@@ -184,6 +189,9 @@ footer .webauthor {
         margin-top: 15px;
         margin-left: 10px;
     }
+    br {
+        display: unset;
+    }
     /*== LIGHT BOX PLUGIN ======*/
     .lb-data .lb-details, .lb-data .lb-close {
         margin-top: 20px;
@@ -233,4 +241,21 @@ footer .webauthor {
     .lb-nav a.lb-prev {
         left: -15%;
     }
+}
+/*Scroll Bar*/
+      /* width */
+  ::-webkit-scrollbar {
+      width: 2px;
+  }
+/* Track */
+::-webkit-scrollbar-track {
+    background: #D8D9D7;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #403C3F;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #403C3F;
 }
