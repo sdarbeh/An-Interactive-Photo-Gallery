@@ -179,7 +179,7 @@ footer .webauthor {
         flex-wrap: wrap;
     }
     .photos li {
-            min-width: 50%;
+        min-width: 50%;
     }
     footer {
         height: 6rem;
@@ -243,10 +243,10 @@ footer .webauthor {
     }
 }
 /*Scroll Bar*/
-      /* width */
-  ::-webkit-scrollbar {
-      width: 2px;
-  }
+/* width */
+::-webkit-scrollbar {
+    width: 2px;
+}
 /* Track */
 ::-webkit-scrollbar-track {
     background: #D8D9D7;
